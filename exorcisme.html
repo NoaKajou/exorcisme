@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EspritSage™ - Maître des Exorcismes et Mystères Surnaturels</title>
+    <style>
+        body {
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            background: url('https://media.giphy.com/media/Zb8M0hTDOXeiQ4g04o/giphy.gif') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffcc00;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-size: 4em;
+            color: #ff3300;
+            text-shadow: 3px 3px 8px black;
+            margin-top: 40px;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: cyan;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        .banner {
+            background-color: red;
+            padding: 15px;
+            font-weight: bold;
+            color: yellow;
+            border: 5px solid gold;
+            margin-bottom: 25px;
+            font-size: 1.5em;
+            animation: blink 1s infinite alternate;
+        }
+
+        @keyframes blink {
+            from { opacity: 1; }
+            to { opacity: 0; }
+        }
+
+        .service {
+            background-color: rgba(0, 0, 0, 0.8);
+            border: 3px solid lime;
+            padding: 20px;
+            margin: 30px auto;
+            width: 70%;
+            box-shadow: 0 0 20px gold;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 20px gold; }
+            50% { box-shadow: 0 0 50px lime; }
+            100% { box-shadow: 0 0 20px gold; }
+        }
+
+        .service h3 {
+            color: lime;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        .service p {
+            font-size: 1.2em;
+            color: white;
+        }
+
+        .testimonial {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            margin: 20px auto;
+            border-radius: 10px;
+            width: 60%;
+            border: 3px solid pink;
+            font-size: 1.1em;
+            color: #00ff00;
+        }
+
+        .testimonial p {
+            font-style: italic;
+        }
+
+        .footer {
+            margin-top: 50px;
+            color: lightgrey;
+            font-size: 0.9em;
+        }
+
+        .call-to-action {
+            font-size: 1.8em;
+            color: red;
+            font-weight: bold;
+            text-shadow: 1px 1px 5px yellow;
+            margin: 20px 0;
+            background-color: #000;
+            padding: 10px;
+            border: 5px solid red;
+            box-shadow: 0 0 15px cyan;
+            cursor: pointer;
+            animation: neonPulse 1.5s infinite alternate;
+        }
+
+        .neon {
+            font-size: 1.5em;
+            color: magenta;
+            animation: neonEffect 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes neonEffect {
+            0% { text-shadow: 0 0 5px #fff, 0 0 10px magenta, 0 0 15px magenta; }
+            100% { text-shadow: 0 0 20px #fff, 0 0 30px magenta, 0 0 40px magenta; }
+        }
+
+        @keyframes neonPulse {
+            0% { box-shadow: 0 0 10px yellow; }
+            100% { box-shadow: 0 0 50px red; }
+        }
+
+        /* Effet de bouton */
+        .button {
+            font-size: 1.5em;
+            padding: 10px 30px;
+            background-color: red;
+            color: yellow;
+            border: 3px solid gold;
+            cursor: pointer;
+            box-shadow: 0 0 10px white;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px yellow;
+        }
+
+        .popup-message {
+            display: none;
+            position: fixed;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 30px;
+            border: 3px solid cyan;
+            z-index: 1000;
+            box-shadow: 0 0 15px cyan;
+        }
+
+        .close-btn {
+            background-color: red;
+            border: none;
+            padding: 10px;
+            color: white;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+
+        /* Animations supplémentaires pour le contenu */
+        .flying-text {
+            display: inline-block;
+            animation: fly 10s linear infinite;
+        }
+
+        @keyframes fly {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+    <script>
+        function showPopup() {
+            var popup = document.getElementById('popup');
+            popup.style.display = 'block';
+        }
+
+        function closePopup() {
+            var popup = document.getElementById('popup');
+            popup.style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+    <div class="banner">
+        🚨 URGENT : Offre spéciale d'exorcisme à moitié prix ! Réservez aujourd'hui ! 🚨
+    </div>
+
+    <h1>EspritSage™</h1>
+    <h2>Maître des Exorcismes et Mystères Surnaturels</h2>
+    <p><em>Résolvez vos problèmes spirituels en un clin d'œil !</em></p>
+
+    <div class="service">
+        <h3>💀 Exorcismes complets 💀</h3>
+        <p>Je chasse les esprits et les entités malfaisantes avec des techniques secrètes transmises depuis des générations. Aucune entité ne me résiste !</p>
+    </div>
+
+    <div class="service">
+        <h3>🔮 Nettoyage spirituel de votre domicile 🔮</h3>
+        <p>Votre maison est hantée ? Je purifie votre lieu de vie en quelques heures, garantissant une paix totale et un confort spirituel.</p>
+    </div>
+
+    <div class="service">
+        <h3>📞 Conseils spirituels à distance 📞</h3>
+        <p>Je peux résoudre vos problèmes sans même vous rencontrer ! Consultation par téléphone ou vidéo, où que vous soyez.</p>
+    </div>
+
+    <div class="call-to-action neon" onclick="showPopup()">
+        ⚡ APPELEZ MAINTENANT : 06 66 66 66 66 ⚡
+    </div>
+
+    <h2>Ce que disent nos clients</h2>
+    <div class="testimonial">
+        <p>"EspritSage™ a débarrassé ma maison de trois fantômes en une seule séance. Depuis, ma vie est bien plus calme. Merci !"</p>
+    </div>
+    <div class="testimonial">
+        <p>"Je ne croyais pas aux esprits, jusqu'à ce que je voie Reigen en action. Incroyable !"</p>
+    </div>
+    <div class="testimonial">
+        <p>"Le meilleur exorciste que j'ai rencontré. Rapide, efficace, et très abordable !"</p>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 EspritSage™ - Tous droits réservés. Contactez-nous au 06 66 66 66 66 | <a href="mailto:contact@espritsage.com" style="color: yellow;">contact@espritsage.com</a></p>
+    </div>
+
+    <div id="popup" class="popup-message">
+        <h2>Prêt pour un exorcisme ?</h2>
+        <p>Nous allons résoudre votre problème spirituel immédiatement ! Appelez-nous au <strong>06 66 66 66 66</strong> ou <a href="mailto:contact@espritsage.com" style="color: cyan;">envoyez-nous un email</a>.</p>
+        <button class="close-btn" onclick="closePopup()">Fermer</button>
+    </div>
+
+    <!-- Texte volant pour ajouter plus d'animation -->
+    <div class="flying-text">
+        <p>⚡ EXORCISMES EN PROMO ! CONTACTEZ-NOUS MAINTENANT ⚡</p>
+    </div>
+</body>
+</html>
